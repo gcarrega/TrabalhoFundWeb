@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Gabriela Carrega</title>
+    <style>
+        /* Define o estilo para o corpo da pagina */
+        body {
+            margin: 0;
+        }
+        /* Define uma grade para o layout da pagina */
+        .container {
+            display: grid;
+        }
+        /*Define o estilo para o cabeçalho da pagina*/
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #808949;
+            padding-left: 35px;
+        }
+        /*Define o estilo do menu da pagina*/
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #A07A93;
+        }
+
+        .foto {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+        /*Define o estilo do rodapé da pagina*/
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #A07A93;
+            color: white;
+            text-align: center;
+            height: 40px;
+        }
+        /*Define o estilo da minha lista*/
+        ul.menu {
+            list-style-type: none;
+            color: #A07A93;
+        }
+        /*Define o estilo dos links*/
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #A07A93 1px;
+        }
+        /*Define o estilo da lista*/
+        li.menu {
+            float: left;
+            font-size: 18px;
+        }
+        /*Muda a cor do link quando passar com o cursor do mouse em cima*/
+        a:hover { 
+            background-color: #A07A93;
+            color: white;
+        }
+        /*Define o formulário da pagina*/
+        form{
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+        /*Layout responsivo para diferentes dispositivos*/
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .foto {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Portfólio Gabriela Carrega</h1>
+        <br>
+    </header>
+    <nav class="container menu" id="menu">  <!--Uso do nav para criar um elemento de navegação-->
+    <ul class="menu">
+        <li class="menu"><a href="#1"><strong>Sobre mim</a></li></strong>
+        <li class="menu"><a href="#2"><strong>Formação</a></li></strong>
+        <li class="menu"><a href="#3"><strong>Portfólio</a></li></strong>
+        <li class="menu"><a href="#4"><strong>Contato</a></li></strong>
+    </ul>
+    </nav>
+
+    <div class="container wrapper">
+        <aside class="foto"> <!--Barra lateral (aside) com a classe foto-->
+            <img src="foto.jpg">
+            <div class="infos"> <!--Div para criar um bloco de conteúdo-->
+                <p><strong>Biomédica</strong></p>
+                <p>
+                    <strong>Estudante de Análise e <br>Desenvolvimento de Sistemas</strong>
+                </p>
+            </div>
+        </aside>
+
+    <section class="principal"> <!--Início da seção principal-->
+        <h3 id="1">Sobre mim</h3>
+        <p>Mudar. Gostaria de começar a me descrever com esse verbo. Tenho 29 anos, há 7 anos sou biomédica e recentemente decidi mudar, acredito que a mudança nos tire da nossa zona de conforto e nos faça enfrentar novos desafios, dar liberdade ao desconforto para o primeiro passo em direção a um novo ciclo. Tenho muito orgulho da minha profissão e da estrada que percorri para chegar até aqui. E claro, mudanças estiveram presentes durante todos esses anos, foi preciso ser flexível e resiliente muitas vezes. Por isso, a ideia de "mudar" me cativa tanto. Alíás, todos nós estamos em constante evolução. Isso é incrível.</p>
+        <p>Ser biomédica me permite estar presente na vida de muitas pessoas, mesmo que indiretamente. A importância de liberar laudos com resultados que auxiliam no diagnóstico correto de outro alguém, e que algumas vezes, mudam destinos. Ser um profissional da saúde requer coragem e empatia. Por isso, é impossível escrever sobre mim e não agradecer à todos os colegas dessa área. Orgulho em fazer parte dessa classe de profissionais.</p>
+        <p>Mas, algo mudou depois da pandemia que vivemos nesses últimos anos, o medo se fez muito presente, afinal estávamos diante de um desconhecido, e nós, profissionais da sáude, éramos a linha de frente, não tivemos o privilégio de trabalhar em "home office", dia após dia estávamos trabalhando para dar o suporte necessário a quem precisava e continuar a salvo. Além disso, na rotina de um laboratório, é preciso trabalhar sob pressão muitas vezes, e até correr contra o tempo.</p>
+        <p>Refleti muito e decidi mudar, escolhi uma área quase que oposta, e gostei. Sou fascinada por tecnologia, tenho muita curiosidade e vontade em aprender coisas novas. Estudar me motiva. Ler um bom livro, é um dos meus hobbies preferidos. Afinal, podemos perder tudo o que temos, mas, o nosso conhecimento ninguém nos tira. Ainda tenho muito para aprender, "step by step" sigo caminhando. Agora nesse novo universo da tecnologia e inovação. Boa sorte para mim nessa transição de carreira.</p>
+        <br>
+        <a href="#menu">Menu</a>
+
+        <br>
+        <br>
+        <h3 id="2">Formação</h3>
+        <ul> <!--Cria uma lista não ordenada-->
+            <li>Graduada em Biomedicina, 2016 - Centro Universitário Central Paulista (UNICEP)</li>
+            <li>Especialização em Análises Clínicas e Hemoterapia, 2018 - Universidade Estadual Paulista (UNESP)</li>
+            <li>Estudante de Análise e Desenvolvimento de Sistemas, Dez. 2022 - Centro Universitário Internacional (UNINTER)</li>
+            <br>
+            <li>Idiomas - Inglês intermediário</li>
+        </ul>
+        <br>
+        <a href="#menu">Menu</a>
+
+        <br>
+        <br>
+        <h3 id="3">Portfólio</h3>
+        <a href="linkPrimeiraPagina.html" target="_blank">Primeira página web</a>
+        <a href="linkInformativo.html" target="_blank">Informativo sobre São Carlos</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="#menu">Menu</a>
+
+        <br>
+        <br>
+        <h3 id="4">Contato</h3>
+        <form action="" method=""> <!--Inicio de uma formulário, action vazio na mesma página, method vazio não escolhi como serão enviados-->
+            <table>
+                <tr>
+                    <th><label for="nome">Nome:</label></th>
+                    <td><input type="text" name="nome" id="nome"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">E-mail:</label></th>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <th><label for="msg">Digite sua mensagem:</label></th>
+                    <td><textarea name="msg" rows="5" cols="40">Digite sua mensagem</textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <button>Enviar</button></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+</div>
+<footer class="container">
+    <h3>Desenvolvido para fins educacionais</h3>
+</footer>
+</div>
+
+</body>
+</html>
